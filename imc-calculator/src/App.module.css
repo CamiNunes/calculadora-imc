@@ -44,8 +44,9 @@ body{
   border-bottom: 2px solid rgba(150, 163, 171, .5);
   padding: 0.7rem 0.1rem;
   margin-bottom: 1.7rem;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   outline: none;
+  color: #6A7D8B; 
 }
 
 .container .leftSide button{
@@ -76,4 +77,28 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.8rem;
+}
+
+.container .rightSide .levelBig{
+  flex: 1;
+  display: flex;
+}
+
+.container .rightSide .Back{
+  position: absolute;
+  background-color: #227C9D;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -3rem;
+  margin-top: 10rem;
+  transition: all ease 0.3;
+}
+
+.container .rightSide .Back:hover{
+  opacity: .8;    
 }
