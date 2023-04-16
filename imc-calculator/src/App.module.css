@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerContainer{
+  max-width: 1500px;
+  margin: 3.5rem auto;
+}
+
+.container{
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.container .leftSide,
+.container .rightSide{
+  flex: 1;
+}
+
+.container .leftSide{
+  margin-right: 3.5rem;
+}
+
+.container .rightSide{
+  margin-left: 3.5rem;
+}
