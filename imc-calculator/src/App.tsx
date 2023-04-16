@@ -35,9 +35,9 @@ export const App =() => {
         <div className={styles.leftSide}>
           <h1>Calcule o seu IMC</h1>
           <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização de Saúde para calcular o peso ideal de cada pessoa.</p>
-          <input type="number" placeholder="Digite sua altura. Ex: 1.5 (em metros)" value={altura > 0 ? altura : ""} onChange={e => setAltura(parseFloat(e.target.value))} />
-          <input type="number" placeholder="Digite seu peso. Ex: 75.3 (em kg)" value={peso > 0 ? peso : ""} onChange={e => setPeso(parseFloat(e.target.value))}/>
-          <button onClick={handleCalculate}>Calcular</button>
+          <input type="number" placeholder="Digite sua altura. Ex: 1.5 (em metros)" value={altura > 0 ? altura : ""} onChange={e => setAltura(parseFloat(e.target.value))} disabled={toShow ? true : false}/>
+          <input type="number" placeholder="Digite seu peso. Ex: 75.3 (em kg)" value={peso > 0 ? peso : ""} onChange={e => setPeso(parseFloat(e.target.value))} disabled={toShow ? true : false}/>
+          <button onClick={handleCalculate} disabled={toShow ? true : false}>Calcular</button>
         </div>
         <div className={styles.rightSide}>
           {!toShow &&
