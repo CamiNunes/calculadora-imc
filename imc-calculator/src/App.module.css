@@ -6,6 +6,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main{
+  padding-bottom: 2.5rem;
+}
+
 .headerContainer{
   max-width: 1500px;
   margin: 3.5rem auto;
@@ -109,4 +113,48 @@ body{
 
 .container .rightSide .Back:hover{
   opacity: .8;    
+}
+
+@media(max-width: 1500px){
+  header{
+    padding: 0 3.5rem;
+  }
+
+  .container{
+    padding: 0 3.5rem;
+  }
+}
+
+@media(max-width: 1100px){
+  header{
+    padding: 0 1.8rem;
+  }
+
+  .container{
+    padding: 0 1.8rem;
+    flex-direction: column;
+  }
+
+  .container .leftSide{
+    margin-right: 0;
+  }
+
+  .container .rightSide{
+    margin-left: 0;
+    margin-top: 3.2rem;
+  }
+
+  .container .rightSide .Back{
+    margin-left: 0 ;
+    margin-top: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .2);
+  }
+}
+
+
+@media(max-width: 430px){
+  .container .rightSide .grid{
+    grid-template-columns: 1fr;
+  }
 }
